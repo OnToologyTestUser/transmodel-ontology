@@ -1,0 +1,23 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "tmcommons:Point" "tmjourney:PointInLinkSequence" "tmjourney:LinkSequence" ; /*classes style*/
+	"xsd:string" -> "xsd:duration" [ label = "owl:equivalentClass" ];
+	"core:" -> "https://w3id.org/transmodel/core/0.1" [ label = "owl:versionIRI" ];
+	"core:" -> "core:" [ label = "vann:preferredNamespaceUri" ];
+	"core:" -> "http://creativecommons.org/licenses/by/4.0/" [ label = "cc:license" ];
+	"NULL" -> "tmjourney:PointInLinkSequence" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "xsd:float" [ label = "owl:onDataRange" ];
+	"NULL" -> "tmcommons:Point" [ label = "owl:onClass" ];
+	"NULL" -> "tmjourney:order" [ label = "owl:onProperty" ];
+	"NULL" -> "tmjourney:viewedAs" [ label = "owl:onProperty" ];
+	"NULL" -> "tmjourney:distanceFromStart" [ label = "owl:onProperty" ];
+	"NULL" -> "tmjourney:inLinkSequence" [ label = "owl:onProperty" ];
+	"NULL" -> "xsd:nonNegativeInteger" [ label = "owl:onDataRange" ];
+	"NULL" -> "tmjourney:madeUpOf" [ label = "owl:onProperty" ];
+	"NULL" -> "tmjourney:LinkSequence" [ label = "owl:onClass" ];
+	"owl:Thing" -> "rdfs:Literal" [ label = "core:name" ];
+	"owl:Thing" -> "xsd:float" [ label = "core:distance" ];
+	"core:MeetingPointService" -> "rdfs:Literal" [ label = "core:description" ];
+
+}
